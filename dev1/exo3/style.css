@@ -1,0 +1,9 @@
+h1 {
+    color:#EEA242;
+    background-color: rgb(250, 250, 250);
+    border: 3px ridge rgb(53, 233, 122);
+    padding: 12px;
+}
+img {
+    width: 50%;
+}

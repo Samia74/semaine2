@@ -1,0 +1,144 @@
+body {  /*aucune marge en haut ou à gauche pour mon body, garamond en police générale, hauteur du body automatique*/
+    margin:0;
+    font-family: Garamond;
+    height: auto;
+}
+
+.logo { /*logo à gauche du header, taille 100px de hauteur et width auto pour qu'il calcule lui même la largeur necessaire
+     sans déformer l'image*/
+    height: 100px;
+    width: auto;
+    float: left;
+}
+
+.title { /*trebuchet en police pour titre sans serif, taille et couleur personnalisées)*/
+    font-family: Trebuchet;
+    font-size: 2em;
+    Color: rgb(116, 17, 83);
+}
+
+header { /*Je détermine ma couleur et ma hauteur du header pour qu'il soit harmonieux avec le logo image)*/
+    background-color: #CEEFE4;
+    height: 150px;
+}
+
+nav { 
+    
+    height: 150px;
+    display: flex; /* j'utilise la flexbox pour mettre en ligne mes liens*/
+    flex-direction: row; /*alignement par défaut*/
+    justify-content: space-around; /*puis de l'espace avec justify content. */ 
+    align-items: center; /*Ensuite je centre mes liens avec align item.
+                            Je voulais qu'il soit centré horizontalement avec le logo 
+                            sinon j'aurai utilisé "flex-end" pour le descendre)*/
+}
+
+a {
+    text-decoration: none; /*j'enlève les puces*/
+    font-family: Helvetica; /*je mets une police différente*/
+    color: rgb(180, 116, 116); /*je veux une couleur différente*/
+    font-weight: bolder; /*je veux un titre plus gras*/
+}
+
+a:hover { /*mes liens survolés changent de couleurs avec un légèr effet de transition*/
+    color: black;
+    transition: 0.3s;
+}
+
+h2 {
+    font-weight: bolder;
+    color:#B38665;
+}
+
+h3 {
+    margin-left: 20px;
+    color:#165749;
+}
+
+h4 {
+    text-decoration: underline;
+}
+
+section {
+    width: 950px;
+    margin: 20px;
+}
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+img {
+    margin: 30px;
+    width: 250px;
+    height: 200px;
+  }
+.type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+  span {
+      margin-left: 50px;
+      font-weight: bold;
+      font-size: 1.2em;
+      color: rgb(74, 74, 180);
+      background-color:#CEEFE4;
+      border: 1px solid blue;
+      width: 100px;
+      height: 50px;
+  }
+  span:before {
+      content: url(img/buy2.png);
+      background-color:#CEEFE4;
+  }
+
+aside {
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+    position: absolute;
+    right: 10px;
+    top: 170px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+footer {
+    height: 30px;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-style: italic;
+    font-size: 1em;
+    background-color:#CEEFE4;
+}
+
+.copy {
+    font-weight: bold;
+    margin: 0;
+}
+
+/*teddy*/
+
+ul {
+    background-color: blanchedalmond;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    
+}
+
+
+
